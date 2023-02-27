@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+struct Employee {
+    char name[50];
+    int id;
+    float hours_worked;
+    float hourly_rate;
+    float salary;
+};
+
+int main() {
+    struct Employee emp;
+
+    printf("Enter employee name: ");
+    scanf("%s", emp.name);
+
+    printf("Enter employee ID: ");
+    scanf("%d", &emp.id);
+
+    printf("Enter number of hours worked: ");
+    scanf("%f", &emp.hours_worked);
+
+    printf("Enter hourly rate: ");
+    scanf("%f", &emp.hourly_rate);
+
+    emp.salary = emp.hours_worked * emp.hourly_rate;
+
+    printf("Employee Name: %s\n", emp.name);
+    printf("Employee ID: %d\n", emp.id);
+    printf("Hours Worked: %.2f\n", emp.hours_worked);
+    printf("Hourly Rate: %.2f\n", emp.hourly_rate);
+    printf("Salary: %.2f\n", emp.salary);
+
+    return 0;
+}
