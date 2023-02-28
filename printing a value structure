@@ -1,0 +1,12 @@
+#include<stdio.h>
+struct value
+{
+int a;
+}s;
+int main()
+{
+	printf("enter a value: ");
+	scanf("%d",&s.a);
+	printf("given value: %d",s.a);
+	return 0;
+}
